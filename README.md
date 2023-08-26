@@ -1,8 +1,3 @@
-# React + Vite
+# KnowNet
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+KnowNet is an SMS based Google search that can answer questions about a variety of topics, such as healthcare, finance, education, etc. KnowNet is powered by Africa's Talking APIs, which allows it to send and receive SMS messages. It can also be connected to a knowledge base of information, which allows it to answer questions in a comprehensive and informative way. KnowNet can be used by people of all ages and educational levels. It would be a valuable resource for people who are looking for information, but who may not have access to the internet or who may not be comfortable using a computer.
