@@ -208,18 +208,27 @@ function ResponsiveAppBar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Button
-              variant="contained"
-              sx={{
-                boxShadow: "none",
-                backgroundColor: "#065F73",
-                "&:hover": {
-                  backgroundColor: "#bdbbbb",
-                },
+            <a
+              href="sms:22881"
+              style={{
+                textDecoration: "none",
               }}
             >
-              Get Started
-            </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  boxShadow: "none",
+                  backgroundColor: "#065F73",
+                  color: "#bdbbbb",
+                  "&:hover": {
+                    backgroundColor: "#bdbbbb",
+                    color: "#065F73",
+                  },
+                }}
+              >
+                Get Started
+              </Button>
+            </a>
           </Box>
         </Toolbar>
       </Container>

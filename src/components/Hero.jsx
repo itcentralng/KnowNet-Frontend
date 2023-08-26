@@ -43,21 +43,28 @@ const Hero = () => {
             KnowNet introduces a revolutionary conversational SMS based Google
             search designed to address information disparities in Africa.
           </Typography>
-          <Button
-            variant="contained"
-            sx={{
-              marginTop: "4em",
-              boxShadow: "none",
-              backgroundColor: "#bdbbbb",
-              color: "#065F73",
-              "&:hover": {
-                backgroundColor: "#065F73",
-                color: "#bdbbbb",
-              },
+          <a
+            href="sms:22881"
+            style={{
+              textDecoration: "none",
             }}
           >
-            Get Started
-          </Button>
+            <Button
+              variant="contained"
+              sx={{
+                marginTop: "4em",
+                boxShadow: "none",
+                backgroundColor: "#bdbbbb",
+                color: "#065F73",
+                "&:hover": {
+                  backgroundColor: "#065F73",
+                  color: "#bdbbbb",
+                },
+              }}
+            >
+              Get Started
+            </Button>
+          </a>
         </Box>
       </Box>
     </Box>
