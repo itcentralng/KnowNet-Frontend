@@ -28,11 +28,15 @@ const About = () => {
             About
           </Typography>
         </Box>
-        <Box sx={{ marginTop: "4em" }}>
+        <Box sx={{ marginTop: { xs: ".3em", md: "2em", lg: "4em" } }}>
           <Typography
             variant="p"
             component="p"
-            sx={{ fontSize: "1.3rem", textAlign: "left", padding: "1em 0" }}
+            sx={{
+              fontSize: { sm: "1.3rem", md: "1.4rem", lg: "1.4rem" },
+              textAlign: "left",
+              padding: "1em 0",
+            }}
           >
             Many people in Africa lack access to information. This can be due to
             a number of factors, such as poverty, lack of education, and lack of
@@ -43,7 +47,11 @@ const About = () => {
           <Typography
             variant="p"
             component="p"
-            sx={{ fontSize: "1.3rem", textAlign: "left", padding: "1em 0" }}
+            sx={{
+              fontSize: { sm: "1.3rem", md: "1.4rem", lg: "1.4rem" },
+              textAlign: "left",
+              padding: "1em 0",
+            }}
           >
             We propose to develop a chatbot that can answer questions about a
             variety of topics, such as healthcare, finance, and education. It
@@ -53,7 +61,11 @@ const About = () => {
           <Typography
             variant="p"
             component="p"
-            sx={{ fontSize: "1.3rem", textAlign: "left", padding: "1em 0" }}
+            sx={{
+              fontSize: { sm: "1.3rem", md: "1.4rem", lg: "1.4rem" },
+              textAlign: "left",
+              padding: "1em 0",
+            }}
           >
             The chatbot would be a valuable resource for people in Africa. It
             would help people to find the information they need to improve their

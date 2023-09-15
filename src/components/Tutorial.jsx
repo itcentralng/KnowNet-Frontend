@@ -28,29 +28,30 @@ const Tutorial = () => {
             How to Use
           </Typography>
         </Box>
-        <Box sx={{ marginTop: "4em" }}>
-          <Typography
-            variant="p"
-            component="p"
-            sx={{ fontSize: "1.3rem", textAlign: "left", padding: "1em 0" }}
-          >
-            <ol>
-              <li style={{ padding: "1em" }}>
-                Look for the icon that indicates message and click on it.
-              </li>
-              <li style={{ padding: "1em" }}>
-                Look for the icon labelled "Send a message" or "Start chat".
-              </li>
-              <li style={{ padding: "1em" }}>
-                Dial in our shortcode as the receiver's number.
-              </li>
-              <li style={{ padding: "1em", paddingBottom: "2em" }}>
-                Type anything and hit "Send" once you are done.
-              </li>
-            </ol>
-            NOTE: First time users are required to register through SMS at no
-            additional cost
-          </Typography>
+        <Box
+          sx={{
+            marginTop: "4em",
+            fontSize: "1.3rem",
+            textAlign: "left",
+            padding: "1em 0",
+          }}
+        >
+          {/* <ol>
+            <li style={{ padding: "1em" }}>
+              Look for the icon that indicates message and click on it.
+            </li>
+            <li style={{ padding: "1em" }}>
+              Look for the icon labelled "Send a message" or "Start chat".
+            </li>
+            <li style={{ padding: "1em" }}>
+              Dial in our shortcode as the receiver's number.
+            </li>
+            <li style={{ padding: "1em", paddingBottom: "2em" }}>
+              Type anything and hit "Send" once you are done.
+            </li>
+          </ol>
+          NOTE: First time users are required to register through SMS at no
+          additional cost */}
         </Box>
       </Box>
     </Box>

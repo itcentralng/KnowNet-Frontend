@@ -22,6 +22,7 @@ const Hero = () => {
               fontFamily: "fantasy",
               letterSpacing: "2px",
               lineHeight: "80px",
+              fontSize: { xs: "5em", md: "6em", lg: "6.2em" },
             }}
           >
             KNOWNET
@@ -39,12 +40,16 @@ const Hero = () => {
           </Typography>
         </Box>
         <Box sx={{ marginTop: "4em" }}>
-          <Typography variant="p" component="p" sx={{ fontSize: "1.3rem" }}>
+          <Typography
+            variant="p"
+            component="p"
+            sx={{ fontSize: { sm: "1.3rem", md: "1.4rem", lg: "1.4rem" } }}
+          >
             KnowNet introduces a revolutionary conversational SMS based Google
             search designed to address information disparities in Africa.
           </Typography>
           <a
-            href="sms:22881"
+            href="sms:22881?body=Hello KnowNet"
             style={{
               textDecoration: "none",
             }}
