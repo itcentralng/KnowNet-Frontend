@@ -36,7 +36,7 @@ const Tutorial = () => {
             padding: "1em 0",
           }}
         >
-          {/* <ol>
+          <ol>
             <li style={{ padding: "1em" }}>
               Look for the icon that indicates message and click on it.
             </li>
@@ -51,7 +51,7 @@ const Tutorial = () => {
             </li>
           </ol>
           NOTE: First time users are required to register through SMS at no
-          additional cost */}
+          additional cost 
         </Box>
       </Box>
     </Box>
