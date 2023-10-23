@@ -1,66 +1,63 @@
+import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
-import logo from "../assets/KNOWNET.png";
-import { Link } from "react-router-dom";
+import Avatar from "@mui/material/Avatar";
+// import Button from "@mui/material/Button";
+import Tooltip from "@mui/material/Tooltip";
+import MenuItem from "@mui/material/MenuItem";
+import AdbIcon from "@mui/icons-material/Adb";
+import knownetLogo from "../assets/KNOWNET.png";
 
-function ResponsiveAppBar() {
+// const pages = ["Products", "Pricing", "Blog"];
+const settings = ["Profile", "Account", "Dashboard", "Logout"];
+
+function Header() {
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+  const handleOpenUserMenu = (event) => {
+    setAnchorElUser(event.currentTarget);
+  };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
+  const handleCloseUserMenu = () => {
+    setAnchorElUser(null);
+  };
+
   return (
-    <AppBar
-      position="static"
-      sx={{
-        // border: "1px solid green",
-        display: "flex",
-        justifyContent: "space-between",
-        width: "100%",
-        backgroundColor: "#bdbbbb",
-        boxShadow: "none",
-        padding: ".5em .2em",
-      }}
-    >
+    <AppBar position="static" sx={{}}>
       <Container maxWidth="xl">
         <Toolbar
           disableGutters
-          sx={{
-            display: "flex",
-            justifyContent: "space-between",
-          }}
+          sx={{ display: "flex", justifyContent: "space-between" }}
         >
-          <img
-            src={logo}
-            style={{
-              // mr: 2,
-              // display: { xs: "none", md: "flex" },
-              // fontFamily: "monospace",
-              // fontWeight: 700,
-              // letterSpacing: ".3rem",
-              // color: "inherit",
-              // textDecoration: "none",
-              width: "10em",
-            }}
-          />
+          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          <img src={knownetLogo} />
 
-          {/* <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "flex", md: "none" },
-              justifyContent: "space-between",
-            }}
-          >
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="#bdbbbb"
-              sx={{ color: "#065F73" }}
+              color="inherit"
             >
               <MenuIcon />
             </IconButton>
-            <Menu
+            {/* <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -75,121 +72,73 @@ function ResponsiveAppBar() {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "flex", md: "none" },
+                display: { xs: "block", md: "none" },
               }}
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography
-                    textAlign="center"
-                    // sx={{ border: "1px solid red" }}
-                  >
-                    {page}
-                  </Typography>
+                  <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
-            </Menu>
-          </Box> */}
-          <Box
+            </Menu> */}
+          </Box>
+          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          <Typography
+            variant="h5"
+            noWrap
+            component="a"
+            href="#app-bar-with-responsive-menu"
             sx={{
+              mr: 2,
+              display: { xs: "flex", md: "none" },
               flexGrow: 1,
-              display: { xs: "none", md: "flex" },
-              justifyContent: "space-between",
-              maxWidth: "55%",
+              fontFamily: "monospace",
+              fontWeight: 700,
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
             }}
           >
-            <Button
-              sx={{
-                my: 2,
-                color: "#065F73",
-                display: "block",
-                backgroundColor: "#transparent",
-                "&:hover": {
-                  backgroundColor: "#3858c",
-                },
-              }}
-            >
-              {/* <a href="" style={{ textDecoration: "none", color: "#065F73" }}> */}
-              About
-              {/* </a> */}
-            </Button>
-            <Button
-              sx={{
-                my: 2,
-                color: "#065F73",
-                display: "block",
-                backgroundColor: "#transparent",
-                "&:hover": {
-                  backgroundColor: "#3858c",
-                },
-              }}
-            >
-              {/* <a href="" style={{ textDecoration: "none", color: "#065F73" }}> */}
-              How to Use
-              {/* </a> */}
-            </Button>
-            <Link to="/contact" style={{ textDecoration: "none" }}>
-              <Button
-                sx={{
-                  my: 2,
-                  color: "#065F73",
-                  display: "block",
-                  backgroundColor: "#transparent",
-                  "&:hover": {
-                    backgroundColor: "#3858c",
-                  },
-                }}
-              >
-                {/* <a href="" style={{ textDecoration: "none", color: "#065F73" }}> */}
-                Contact Us
-                {/* </a> */}
-              </Button>
-            </Link>
-            <Link to="/contact" style={{ textDecoration: "none" }}>
-              <Button
-                sx={{
-                  my: 2,
-                  color: "#065F73",
-                  display: "block",
-                  backgroundColor: "#transparent",
-                  "&:hover": {
-                    backgroundColor: "#3858c",
-                  },
-                }}
-              >
-                {/* <a href="" style={{ textDecoration: "none", color: "#065F73" }}> */}
-                For Adverts
-                {/* </a> */}
-              </Button>
-            </Link>
-          </Box>
+            LOGO
+          </Typography>
+          <Box sx={{ display: "flex", alignItems: "center", width: "10%" }}>
+            <Typography variant="body2" component="h4">
+              Usman Ramalan
+            </Typography>
 
-          <Box sx={{ flexGrow: 0 }}>
-            <a
-              href="sms:22881?body=Hello KnowNet"
-              style={{
-                textDecoration: "none",
-              }}
-            >
-              <Button
-                variant="contained"
-                sx={{
-                  boxShadow: "none",
-                  backgroundColor: "#065F73",
-                  color: "#bdbbbb",
-                  "&:hover": {
-                    backgroundColor: "#bdbbbb",
-                    color: "#065F73",
-                  },
+            <Box sx={{ flexGrow: 0 }}>
+              <Tooltip title="Open settings">
+                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                  <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                </IconButton>
+              </Tooltip>
+              <Menu
+                sx={{ mt: "45px" }}
+                id="menu-appbar"
+                anchorEl={anchorElUser}
+                anchorOrigin={{
+                  vertical: "top",
+                  horizontal: "right",
                 }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "right",
+                }}
+                open={Boolean(anchorElUser)}
+                onClose={handleCloseUserMenu}
               >
-                Get Started
-              </Button>
-            </a>
+                {settings.map((setting) => (
+                  <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                    <Typography textAlign="center">{setting}</Typography>
+                  </MenuItem>
+                ))}
+              </Menu>
+            </Box>
           </Box>
         </Toolbar>
       </Container>
     </AppBar>
   );
 }
-export default ResponsiveAppBar;
+export default Header;
