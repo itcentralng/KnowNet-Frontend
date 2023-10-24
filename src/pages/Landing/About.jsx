@@ -4,14 +4,14 @@ const About = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "#bdbbbb",
+        backgroundColor: "#DCD8F8",
         padding: "3em 0",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
         textAlign: "center",
-        color: "#065F73",
+        color: "#000000",
       }}
     >
       <Box width="70%">

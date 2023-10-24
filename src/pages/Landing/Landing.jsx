@@ -6,7 +6,7 @@ import Tutorial from "./Tutorial";
 
 function Landing() {
   return (
-    <Box sx={{ color: "#bdbbbb" }}>
+    <Box sx={{ color: "#DCD8F8" }}>
       <Header />
       <Hero />
       <About />
