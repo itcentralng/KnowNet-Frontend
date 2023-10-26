@@ -5,7 +5,7 @@ const Tutorial = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "#065F73",
+        backgroundColor: "#DCD8F8",
         padding: "3em 0",
         display: "flex",
         justifyContent: "center",
@@ -23,6 +23,7 @@ const Tutorial = () => {
               fontFamily: "fantasy",
               letterSpacing: "2px",
               lineHeight: "80px",
+              color: "#000000",
             }}
           >
             How to Use
@@ -34,6 +35,7 @@ const Tutorial = () => {
             fontSize: "1.3rem",
             textAlign: "left",
             padding: "1em 0",
+            color: "#000000",
           }}
         >
           <ol>
@@ -51,7 +53,7 @@ const Tutorial = () => {
             </li>
           </ol>
           NOTE: First time users are required to register through SMS at no
-          additional cost 
+          additional cost
         </Box>
       </Box>
     </Box>

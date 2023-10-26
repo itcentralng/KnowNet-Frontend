@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "#065F73",
+        backgroundColor: "#7B55FF",
         padding: "3em 0",
         display: "flex",
         justifyContent: "center",
@@ -22,7 +22,8 @@ const Hero = () => {
               fontFamily: "fantasy",
               letterSpacing: "2px",
               lineHeight: "80px",
-              fontSize: { xs: "5em", md: "6em", lg: "6.2em" },
+              fontSize: { xs: "6em", md: "7em", lg: "7.2em" },
+              color: "#000000",
             }}
           >
             KNOWNET
@@ -34,6 +35,8 @@ const Hero = () => {
               fontFamily: "cursive",
               textAlign: "center",
               fontStyle: "italic",
+              color: "#DCD8F8",
+              marginTop: "14px",
             }}
           >
             Knowledge Without Barriers
@@ -43,7 +46,11 @@ const Hero = () => {
           <Typography
             variant="p"
             component="p"
-            sx={{ fontSize: { sm: "1.3rem", md: "1.4rem", lg: "1.4rem" } }}
+            sx={{
+              fontSize: { sm: "1.6rem", md: "1.7rem", lg: "1.7rem" },
+              color: "#000000",
+              fontWeight: "800",
+            }}
           >
             KnowNet introduces a revolutionary conversational SMS based Google
             search designed to address information disparities in Africa.
@@ -59,11 +66,11 @@ const Hero = () => {
               sx={{
                 marginTop: "4em",
                 boxShadow: "none",
-                backgroundColor: "#bdbbbb",
-                color: "#065F73",
+                backgroundColor: "#DCD8F8",
+                color: "#000000",
                 "&:hover": {
-                  backgroundColor: "#065F73",
-                  color: "#bdbbbb",
+                  backgroundColor: "#000000",
+                  color: "#DCD8F8",
                 },
               }}
             >

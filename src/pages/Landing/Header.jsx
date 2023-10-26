@@ -15,7 +15,7 @@ function ResponsiveAppBar() {
         display: "flex",
         justifyContent: "space-between",
         width: "100%",
-        backgroundColor: "#bdbbbb",
+        backgroundColor: "#DCD8F8",
         boxShadow: "none",
         padding: "0 .2em",
       }}
@@ -101,7 +101,7 @@ function ResponsiveAppBar() {
             <Button
               sx={{
                 my: 2,
-                color: "#065F73",
+                color: "#000000",
                 display: "block",
                 backgroundColor: "#transparent",
                 "&:hover": {
@@ -116,7 +116,7 @@ function ResponsiveAppBar() {
             <Button
               sx={{
                 my: 2,
-                color: "#065F73",
+                color: "#000000",
                 display: "block",
                 backgroundColor: "#transparent",
                 "&:hover": {
@@ -132,7 +132,7 @@ function ResponsiveAppBar() {
               <Button
                 sx={{
                   my: 2,
-                  color: "#065F73",
+                  color: "#000000",
                   display: "block",
                   backgroundColor: "#transparent",
                   "&:hover": {
@@ -149,7 +149,7 @@ function ResponsiveAppBar() {
               <Button
                 sx={{
                   my: 2,
-                  color: "#065F73",
+                  color: "#000000",
                   display: "block",
                   backgroundColor: "#transparent",
                   "&:hover": {
@@ -175,11 +175,11 @@ function ResponsiveAppBar() {
                 variant="contained"
                 sx={{
                   boxShadow: "none",
-                  backgroundColor: "#065F73",
-                  color: "#bdbbbb",
+                  backgroundColor: "#7B55FF",
+                  color: "#000000",
                   "&:hover": {
-                    backgroundColor: "#bdbbbb",
-                    color: "#065F73",
+                    backgroundColor: "#000000",
+                    color: "#DCD8F8",
                   },
                 }}
               >
