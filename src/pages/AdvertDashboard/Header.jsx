@@ -5,11 +5,9 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
-import knownetLogo from "../assets/KNOWNET.png";
-import userLogo from "../assets/userLogo.svg";
+import knownetLogo from "../../assets/KNOWNET.png";
+import userLogo from "../../assets/userLogo.svg";
 import SideNav from "./SideNav";
-
-// const pages = ["Products", "Pricing", "Blog"];
 
 function Header() {
   return (
