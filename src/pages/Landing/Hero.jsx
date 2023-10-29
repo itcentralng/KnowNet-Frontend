@@ -56,7 +56,7 @@ const Hero = () => {
             search designed to address information disparities in Africa.
           </Typography>
           <a
-            href="sms:22881?body=Hello KnowNet"
+            href="sms:34461?body=Knownet Hello"
             style={{
               textDecoration: "none",
             }}
